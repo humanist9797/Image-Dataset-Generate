@@ -8,8 +8,8 @@ output_dir = 'D:/image/dataset1/original_output'  # Directory to save the result
 os.makedirs(output_dir, exist_ok=True)
 
 # Set noise intensity range (standard deviation, randomly selected within min~max range)
-min_noise_std = 10  # Minimum noise intensity
-max_noise_std = 50  # Maximum noise intensity
+min_noise_std = 250  # Minimum noise intensity
+max_noise_std = 500  # Maximum noise intensity
 
 # Get list of all image files in the input directory
 image_files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
